@@ -42,7 +42,7 @@ select(raw_dat, 1:5)
 dat <- raw_dat %>% gather(key, value, -country)
 head(dat)
 dat$key[1:5]
-
+dat
 # separate on underscores
 dat %>% separate(key, c("year", "variable_name"), "_")
 dat %>% separate(key, c("year", "variable_name"))
